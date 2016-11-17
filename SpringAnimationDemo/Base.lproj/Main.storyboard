@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SpringAnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="3072" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DhK-4g-EGZ" userLabel="viewOne">
+                                <rect key="frame" x="0.0" y="20" width="1229" height="748"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CsU-oz-NPd">
+                                        <rect key="frame" x="565" y="354" width="100" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="GoH-md-NMv"/>
+                                            <constraint firstAttribute="width" constant="100" id="Udo-hS-qi0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <state key="normal" title="按鈕1"/>
+                                        <connections>
+                                            <action selector="btnedOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sVh-35-ejf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbR-OW-tMy">
+                                        <rect key="frame" x="564" y="465" width="102" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="HF0-D4-fSu"/>
+                                            <constraint firstAttribute="width" constant="102" id="qND-hi-DHr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <state key="normal" title="按鈕2"/>
+                                        <connections>
+                                            <action selector="btnedTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vIO-HS-OXa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWy-8h-LDf">
+                                        <rect key="frame" x="564" y="551" width="102" height="40"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <state key="normal" title="消失"/>
+                                        <connections>
+                                            <action selector="btnedCancel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bb8-TV-NKy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="gWy-8h-LDf" firstAttribute="centerX" secondItem="DhK-4g-EGZ" secondAttribute="centerX" id="5O7-A1-eiJ"/>
+                                    <constraint firstItem="gWy-8h-LDf" firstAttribute="top" secondItem="wbR-OW-tMy" secondAttribute="bottom" constant="46" id="MLh-Kv-vFT"/>
+                                    <constraint firstItem="gWy-8h-LDf" firstAttribute="width" secondItem="wbR-OW-tMy" secondAttribute="width" id="RNr-R1-PL9"/>
+                                    <constraint firstItem="gWy-8h-LDf" firstAttribute="height" secondItem="wbR-OW-tMy" secondAttribute="height" id="SBh-yD-HOG"/>
+                                    <constraint firstItem="wbR-OW-tMy" firstAttribute="centerX" secondItem="DhK-4g-EGZ" secondAttribute="centerX" id="ZUs-sZ-ab1"/>
+                                    <constraint firstItem="CsU-oz-NPd" firstAttribute="centerY" secondItem="DhK-4g-EGZ" secondAttribute="centerY" id="c7o-Nq-NZs"/>
+                                    <constraint firstItem="wbR-OW-tMy" firstAttribute="top" secondItem="CsU-oz-NPd" secondAttribute="bottom" constant="71" id="x3E-bq-5ku"/>
+                                    <constraint firstItem="CsU-oz-NPd" firstAttribute="centerX" secondItem="DhK-4g-EGZ" secondAttribute="centerX" id="z3U-JE-UkP"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w52-y4-e0u">
+                                <rect key="frame" x="1229" y="20" width="1843" height="748"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" restorationIdentifier="viewThree" translatesAutoresizingMaskIntoConstraints="NO" id="cQ0-mg-vyh" userLabel="viewThree" customClass="SpringView" customModule="Spring">
+                                        <rect key="frame" x="1333" y="0.0" width="1843" height="808"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGd-AU-QWq">
+                                                <rect key="frame" x="872" y="369" width="100" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="Kpb-qd-qNY"/>
+                                                    <constraint firstAttribute="width" constant="100" id="rpu-rk-Mc1"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <state key="normal" title="按鈕4"/>
+                                                <connections>
+                                                    <action selector="btnedFore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iEF-kC-Vc8"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.1137254902" green="0.91372549020000005" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="iGd-AU-QWq" firstAttribute="centerX" secondItem="cQ0-mg-vyh" secondAttribute="centerX" id="Y1f-lJ-Fp8"/>
+                                            <constraint firstItem="iGd-AU-QWq" firstAttribute="centerY" secondItem="cQ0-mg-vyh" secondAttribute="centerY" id="kjt-aL-41x"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" restorationIdentifier="viewTwo" translatesAutoresizingMaskIntoConstraints="NO" id="nrV-QF-hjL" userLabel="viewTwo" customClass="SpringView" customModule="Spring">
+                                        <rect key="frame" x="800" y="0.0" width="1843" height="768"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycA-VS-5Cb">
+                                                <rect key="frame" x="884" y="361" width="74" height="46"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <state key="normal" title="按鈕3"/>
+                                                <connections>
+                                                    <action selector="btnedThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l5E-9R-u8u"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.88294136639999998" green="1" blue="0.60804771069999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="768" id="Idy-8K-BqT"/>
+                                            <constraint firstItem="ycA-VS-5Cb" firstAttribute="centerY" secondItem="nrV-QF-hjL" secondAttribute="centerY" id="ZCd-4q-vs1"/>
+                                            <constraint firstItem="ycA-VS-5Cb" firstAttribute="centerX" secondItem="nrV-QF-hjL" secondAttribute="centerX" id="tJU-EV-VIN"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="cQ0-mg-vyh" secondAttribute="bottom" constant="-40" id="3PJ-lr-YA9"/>
+                                    <constraint firstItem="cQ0-mg-vyh" firstAttribute="leading" secondItem="w52-y4-e0u" secondAttribute="leading" constant="1332.5" id="55U-7S-mR2"/>
+                                    <constraint firstItem="nrV-QF-hjL" firstAttribute="leading" secondItem="w52-y4-e0u" secondAttribute="leading" constant="800" id="CdI-4P-AQE"/>
+                                    <constraint firstItem="nrV-QF-hjL" firstAttribute="top" secondItem="w52-y4-e0u" secondAttribute="top" id="HL8-Wm-twn"/>
+                                    <constraint firstAttribute="bottom" secondItem="nrV-QF-hjL" secondAttribute="bottom" id="Xce-Fp-XK3"/>
+                                    <constraint firstAttribute="trailing" secondItem="nrV-QF-hjL" secondAttribute="trailing" constant="-186" id="lgT-Xy-7bX"/>
+                                    <constraint firstItem="cQ0-mg-vyh" firstAttribute="top" secondItem="w52-y4-e0u" secondAttribute="top" id="qMn-XY-JWJ"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DhK-4g-EGZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="D4N-FG-3H0"/>
+                            <constraint firstItem="DhK-4g-EGZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="DE6-GI-bJp"/>
+                            <constraint firstItem="DhK-4g-EGZ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="2:5" id="Hbg-sZ-zNE"/>
+                            <constraint firstItem="w52-y4-e0u" firstAttribute="leading" secondItem="DhK-4g-EGZ" secondAttribute="trailing" id="NCW-AH-nUP"/>
+                            <constraint firstAttribute="bottom" secondItem="w52-y4-e0u" secondAttribute="bottom" id="YRq-SF-ceu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DhK-4g-EGZ" secondAttribute="bottom" id="bU3-4z-1HE"/>
+                            <constraint firstItem="nrV-QF-hjL" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="3:5" id="c9V-Dy-8H1"/>
+                            <constraint firstItem="cQ0-mg-vyh" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="3:5" id="gaX-Te-kq5"/>
+                            <constraint firstAttribute="trailing" secondItem="w52-y4-e0u" secondAttribute="trailing" id="pKa-um-OiK"/>
+                            <constraint firstItem="w52-y4-e0u" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="xN4-8n-bQi"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="3072" height="768"/>
+                    <connections>
+                        <outlet property="btnedFore" destination="iGd-AU-QWq" id="3B3-6I-8e8"/>
+                        <outlet property="btnedOne" destination="CsU-oz-NPd" id="abK-CK-DxM"/>
+                        <outlet property="btnedThree" destination="iGd-AU-QWq" id="BEN-sZ-9oK"/>
+                        <outlet property="btnedTwo" destination="wbR-OW-tMy" id="d04-An-n7K"/>
+                        <outlet property="viewOne" destination="DhK-4g-EGZ" id="HEr-mc-8e9"/>
+                        <outlet property="viewThree" destination="cQ0-mg-vyh" id="6lh-6r-nL4"/>
+                        <outlet property="viewThreeConstaint" destination="55U-7S-mR2" id="9nE-g2-dj6"/>
+                        <outlet property="viewTwo" destination="nrV-QF-hjL" id="En4-JD-BOm"/>
+                        <outlet property="viewTwoConstaint" destination="CdI-4P-AQE" id="IF2-UV-tv4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98.4375" y="123.4375"/>
+        </scene>
+    </scenes>
+</document>
